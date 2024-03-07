@@ -4,9 +4,9 @@
 # Read /etc/passwd line by line using a while loop
 while IFS=: read -r username _ uid gid gecos home shell; do
     # Extract additional information from gecos field
-    IFS=':' read -r _ _ _ _ info <<< "$gecos"
+    info=$(echo "$gecos" | cut -d',' -f1)
     # Extract password from gecos field
-    IFS=',' read -r _ _ _ password _ <<< "$info"
+    password=$(echo "$gecos" | cut -d',' -f6)
 
     # Display user information
     echo "The user $username is part of the $gid gang, lives in $home and rides $shell. User ID's place is protected by the passcode $password, more info about the user here: $info"

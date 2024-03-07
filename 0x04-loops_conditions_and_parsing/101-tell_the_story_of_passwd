@@ -1,12 +1,10 @@
 #!/usr/bin/env bash
-# This script displays information about each user in /etc/passwd using a while loop and IFS
+# Print 'best shcoll' 10 times
 
-# Read /etc/passwd line by line using a while loop
-while IFS=: read -r username _ uid gid gecos home shell; do
-    # Extract user's full name and password from the gecos field
-    info=$(echo "$gecos" | awk -F',' '{print $1}')
-    password=$(echo "$gecos" | awk -F',' '{print $6}')
+i=0
 
-    # Display user information
-    echo "The user $username is part of the $gid gang, lives in $home and rides $shell. User ID's place is protected by the passcode $password, more info about the user here: $info"
-done < /etc/passwd
+while [ $i -lt 10 ]
+do
+    echo "Best School"
+    ((i++))
+done

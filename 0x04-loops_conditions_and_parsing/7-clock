@@ -19,3 +19,4 @@ while [ $hour -le 12 ] && [ $minute -le 59 ]; do
         ((hour++))
     fi
 done | head -n 70
+

@@ -1,0 +1,30 @@
+#!/usr/bin/env bash
+# This script displays numbers from 1 to 20 and associated messages for specific iterations
+
+# Initialize counter
+counter=0
+
+# Loop while counter is less than or equal to 20
+while [ $counter -lt 20 ]; do
+    # Increment counter
+    ((counter++))
+
+    # Display numbers and messages based on the loop iteration using a case statement
+    case $counter in
+        4)
+            echo "$counter"
+            echo "bad luck from China"
+            ;;
+        9)
+            echo "$counter"
+            echo "bad luck from Japan"
+            ;;
+        17)
+            echo "$counter"
+            echo "bad luck from Italy"
+            ;;
+        *)
+            echo "$counter"
+            ;;
+    esac
+done

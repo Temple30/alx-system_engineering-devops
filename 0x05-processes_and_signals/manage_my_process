@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+# Script to simulate manage_my_process
+
+# Start function
+start_process() {
+    echo "manage_my_process started"
+    sleep infinity
+}
+
+# Stop function
+stop_process() {
+    echo "manage_my_process stopped"
+}
+
+# Main logic
+case "$1" in
+    start)
+        start_process &
+        echo "$!" > /var/run/my_process.pid
+        ;;
+    stop)
+        stop_process
+        rm -f /var/run/my_process.pid
+        ;;
+    restart)
+        stop_process
+        rm -f /var/run/my_process.pid
+        start_process &
+        echo "$!" > /var/run/my_process.pid
+        ;;
+    *)
+        echo "Usage: manage_my_process {start|stop|restart}"
+        exit 1
+        ;;
+esac

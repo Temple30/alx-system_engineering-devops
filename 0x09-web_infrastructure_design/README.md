@@ -40,5 +40,5 @@
 AUTHORS
 --------
 
-* Godwin Asuquo <
+* Godwin Asuquo <asuquogodwin34@gmail.com>
 * Roslyn Lewis <roslynclewis1004@gmail.com> 

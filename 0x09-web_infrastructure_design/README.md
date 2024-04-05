@@ -33,7 +33,7 @@
 
         * 3 firewalls
         * 1 SSL certificate to serve www.foobar.com over HTTPS
-        * 3 monitorind clients (data collector for Sumologic or other monitoring services)
+        * 3 monitoring clients (data collector for Sumologic or other monitoring services)
 
 ===============================================================
 

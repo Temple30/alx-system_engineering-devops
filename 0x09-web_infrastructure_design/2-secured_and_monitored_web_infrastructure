@@ -1,0 +1,21 @@
+                                 User
+                                  |
+                                  v
+                                 DNS
+                                  |
+                                  v
+                         Domain Registrar
+                                  |
+                                  v
+                           Load Balancer
+                           |          |
+                       Firewall 1   Firewall 2
+                           |          |
+                       Web Server 1 Web Server 2
+                           |          |
+                       Application Server
+                                  |
+                                Firewall 3
+                                  |
+                                  v
+                                Database

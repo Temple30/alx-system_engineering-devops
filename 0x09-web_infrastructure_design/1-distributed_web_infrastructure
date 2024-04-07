@@ -1,0 +1,20 @@
+
+                               User
+                                |
+                                v
+                               DNS
+                                |
+                                v
+                        Domain Register
+                                |
+                                v
+                           Load Balancer
+                         /              \
+               Web Server 1            Web Server 2
+                     |                        |
+                     v                        v
+                Application Server         Application Server
+                     |                        |
+                     v                        v
+                    Database                Database
+                     Server 1                Server 2

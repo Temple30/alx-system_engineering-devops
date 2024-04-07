@@ -1,0 +1,27 @@
+ User
+    |
+    v
+   Browser
+    |
+    v
+   DNS Server
+    |
+    v
+   Domain Register
+    |
+    v
+   ┌───────────┐
+   │           │
+   │  www.     │
+   │foobar.com │
+   │           │
+   └───────────┘
+      |
+      v
+   Web Server
+      |
+      v
+   Application Server
+      |
+      v
+   Database Server
